@@ -3,16 +3,22 @@
 
 *{
   // border: 1px solid red;
+
+}
+body{
+  margin:0;
+  @include font;
 }
 
 .content{
-  width: 90vw;
+  width: 95vw;
   margin: auto;
 }
 
 .slideshow{
   display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 50vh;
   img{
     width: 100%;
   }
@@ -42,6 +48,8 @@
   background-color: black;
   color: white;
   text-align: center;
+  height: 50%;
+  padding: 20px 0;
 }
 
 .collections{
@@ -89,22 +97,49 @@
 .footer{
   background-color: black;
   color: white;
-  height: 370px;
-  .userInput{
+  height: 310px;
+  padding: 36px 0 67px 0;
+  .footerTop{
     display: flex;
-    flex-direction: column;
-    .join{
-      align-content: center;
-      input{
-        border: 0 solid transparent;
-        margin-right: -4px;
-        height: 30px;
-        width: 250px;
+    font-size: 90%;
+    padding: 0 50px;
+    .userInput{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      .join{
+        width: 100%;
+        align-content: center;
+        input{
+          border: 0 solid transparent;
+          margin-right: -4px;
+          margin-bottom: 25px;
+          height: 30px;
+          width: 250px;
+        }
+        button{
+          border: 0 solid transparent;
+          height: 32px;
+        }
       }
-      button{
-        border: 0 solid transparent;
-        height: 32px;
-      }
+    }
+    .contact{
+      width: 25%;
+      @include greenTag;
+    }
+    .care{
+      width: 25%;
+      @include greenTag;
+    }
+  }
+  .footerBottom{
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    padding: 80px;
+    div{
+      margin-left: 25px;
+      @include greenTag;
     }
   }
 }

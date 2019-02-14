@@ -1,1 +1,16 @@
+@mixin font($font-size: 14px) {
+  font:{
+    family: Arial, sans-serif;
+  }
+  size: $font-size;
+}
 
+@mixin greenTag{
+  a{
+    color: white;
+    text-decoration:none;
+    &:hover{
+      color:lighten( $myColor,10%);
+    }
+  }
+}

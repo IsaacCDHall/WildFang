@@ -1,10 +1,16 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  size: 14px; }
+
 .content {
-  width: 90vw;
+  width: 95vw;
   margin: auto; }
 
 .slideshow {
   display: flex;
-  justify-content: center; }
+  width: 100%;
+  height: 50vh; }
   .slideshow img {
     width: 100%; }
 
@@ -26,7 +32,9 @@
 .banner {
   background-color: black;
   color: white;
-  text-align: center; }
+  text-align: center;
+  height: 50%;
+  padding: 20px 0; }
 
 .collections {
   width: 100%;
@@ -62,19 +70,53 @@
 .footer {
   background-color: black;
   color: white;
-  height: 370px; }
-  .footer .userInput {
+  height: 310px;
+  padding: 36px 0 67px 0; }
+  .footer .footerTop {
     display: flex;
-    flex-direction: column; }
-    .footer .userInput .join {
-      align-content: center; }
-      .footer .userInput .join input {
-        border: 0 solid transparent;
-        margin-right: -4px;
-        height: 30px;
-        width: 250px; }
-      .footer .userInput .join button {
-        border: 0 solid transparent;
-        height: 32px; }
+    font-size: 90%;
+    padding: 0 50px; }
+    .footer .footerTop .userInput {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+      .footer .footerTop .userInput .join {
+        width: 100%;
+        align-content: center; }
+        .footer .footerTop .userInput .join input {
+          border: 0 solid transparent;
+          margin-right: -4px;
+          margin-bottom: 25px;
+          height: 30px;
+          width: 250px; }
+        .footer .footerTop .userInput .join button {
+          border: 0 solid transparent;
+          height: 32px; }
+    .footer .footerTop .contact {
+      width: 25%; }
+      .footer .footerTop .contact a {
+        color: white;
+        text-decoration: none; }
+        .footer .footerTop .contact a:hover {
+          color: #27ec58; }
+    .footer .footerTop .care {
+      width: 25%; }
+      .footer .footerTop .care a {
+        color: white;
+        text-decoration: none; }
+        .footer .footerTop .care a:hover {
+          color: #27ec58; }
+  .footer .footerBottom {
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    padding: 80px; }
+    .footer .footerBottom div {
+      margin-left: 25px; }
+      .footer .footerBottom div a {
+        color: white;
+        text-decoration: none; }
+        .footer .footerBottom div a:hover {
+          color: #27ec58; }
 
 /*# sourceMappingURL=output.css.map */
