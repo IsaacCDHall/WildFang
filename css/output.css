@@ -1,4 +1,80 @@
-* {
-  border: 1px solid red; }
+.content {
+  width: 90vw;
+  margin: auto; }
+
+.slideshow {
+  display: flex;
+  justify-content: center; }
+  .slideshow img {
+    width: 100%; }
+
+.ads {
+  display: flex;
+  width: 100%;
+  margin: 20px 0; }
+  .ads .ad1 {
+    width: 50%;
+    margin-right: 10px; }
+    .ads .ad1 img {
+      width: 100%; }
+  .ads .ad2 {
+    width: 50%;
+    margin-left: 10px; }
+    .ads .ad2 img {
+      width: 100%; }
+
+.banner {
+  background-color: black;
+  color: white;
+  text-align: center; }
+
+.collections {
+  width: 100%;
+  margin-bottom: 20px; }
+  .collections h1 {
+    text-align: center;
+    border-bottom: 1px solid black; }
+  .collections .clothes {
+    display: flex;
+    width: 100%; }
+    .collections .clothes img {
+      width: 100%; }
+    .collections .clothes div:nth-child(odd) {
+      margin-right: 20px; }
+    .collections .clothes div:nth-child(2) {
+      margin-right: 20px; }
+
+.features {
+  display: flex;
+  width: 100%;
+  margin: 20px 0; }
+  .features .shop {
+    width: 50%;
+    margin-right: 10px; }
+    .features .shop img {
+      width: 100%; }
+  .features .ourStory {
+    width: 50%;
+    margin-left: 10px; }
+    .features .ourStory img {
+      width: 100%; }
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 370px; }
+  .footer .userInput {
+    display: flex;
+    flex-direction: column; }
+    .footer .userInput .join {
+      align-content: center; }
+      .footer .userInput .join input {
+        border: 0 solid transparent;
+        margin-right: -4px;
+        height: 30px;
+        width: 250px; }
+      .footer .userInput .join button {
+        border: 0 solid transparent;
+        height: 32px; }
 
 /*# sourceMappingURL=output.css.map */
