@@ -5,12 +5,13 @@
   size: $font-size;
 }
 
-@mixin greenTag{
+@mixin greenTag($color: white){
   a{
-    color: white;
+    color: $color;
     text-decoration:none;
     &:hover{
       color:lighten( $myColor,10%);
     }
+
   }
 }
